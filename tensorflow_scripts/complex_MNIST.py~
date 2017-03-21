@@ -1,5 +1,4 @@
 '''
-' Testing set user to myself
 ' benchmark test for MNIST dataset
 '''
 from __future__ import print_function

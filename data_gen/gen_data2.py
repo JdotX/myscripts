@@ -8,27 +8,7 @@ def gen_single_data_piece(feature_no, step):
     feature_set = []
     a = []
     # decide the class
-    y = random.randint(0,1)
-    '''
-    # generate the 4 first features
-    for i in [1,2,3,4]:
-        a.append(random.random())
-    ym = a[0]+2*a[1]-2*a[2]-a[3]
-    if ym > 0:
-        y = 1
-    else:
-        y = 0
-    '''
-    ans = ans + str(y) + " "    
-    sample_feature = 0
-    while sample_feature < feature_no:
-        feature_set.append(sample_feature)
-        sample_feature = sample_feature + random.randint(1, step) + step
-    '''
-    for ft in [1,2,3,4]:
-        ans = ans + str(ft) + ":" + str(a[ft-1]) + " "
-    '''
-    for ft in feature_set:
+    for ft in range(1,feature_no):
         sp = random.random()
         ans = ans + str(ft) + ":" + str(sp) + " "
     ans = ans + "\n"
@@ -48,8 +28,8 @@ def gen_data_and_write(sample_no, feature_no, output_txt_path, step_size = 2000)
 
 if __name__ == '__main__':
     t1 = time.time()
-    sample_no = 100
-    feature_no = 200000000
+    sample_no = 50
+    feature_no = 200000
     output_txt_path = "synthetic_lr_data2.txt"
     gen_data_and_write(sample_no, feature_no, output_txt_path)
     print time.time() - t1

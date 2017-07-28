@@ -15,3 +15,7 @@ http://delivery.acm.org/10.1145/1080000/1070886/p83-enachescu.pdf?ip=143.89.76.4
 ### self CSFQ Ion stoica
 
 https://pdfs.semanticscholar.org/d648/6c8ae6e58dd110b2513eddc0d139d43cb66d.pdf
+
+### Color theory for designers
+
+https://www.smashingmagazine.com/2010/01/color-theory-for-designers-part-1-the-meaning-of-color/

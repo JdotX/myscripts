@@ -3,18 +3,17 @@ Distributed matrix factorization v0.1
 Not splitting the original matrix
 24-Apr-2017
 '''
-
 from __future__ import division
 import tensorflow as tf
 import numpy as np
 import time
 import nmftool
 
-parameter_servers = ["10.40.2.203:12301"]
-workers = ["10.40.2.202:12201"]
+parameter_servers = ["10.0.192.26:12301"]
+workers = ["10.0.192.25:12201"]
 #parameter_servers = ["10.40.199.203:12301"]
 #workers = ["10.40.199.202:12201"]
-proto = 'grpc'
+proto = 'grpc+verbs'
 cluster = tf.train.ClusterSpec({"ps": parameter_servers,
                                 "worker": workers})
 
